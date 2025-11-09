@@ -8,7 +8,7 @@ type Weapon = {
   melee: boolean
 };
 
-const weapons = {
+const weapons: Record<number, Weapon> = {
   [GetHashKey('WEAPON_KNIFE')]: {
     male: 50, // Success rate för män utav 100
     female: 85  , // Success rate för kvinnor utav 100
